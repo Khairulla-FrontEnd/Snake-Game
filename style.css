@@ -1,0 +1,116 @@
+:root {
+  --mainColor: #9bba5a;
+  --textColor: rgba(0, 0, 0, 0.75);
+}
+body {
+  overflow-x: hidden;
+  font-family: "Matemasie", sans-serif;
+  background-color: var(--mainColor);
+  color: var(--textColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  transform: scale(0.8);
+  overflow: hidden;
+}
+#game-board {
+  border: 6px solid var(--textColor);
+}
+#start-point {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+#title {
+  font-size: 50px;
+}
+#start {
+  font-size: 35px;
+  cursor: pointer;
+  transition: 0.1s linear;
+  padding: 10px;
+  border-radius: 15px;
+}
+.bi {
+  padding: 20px;
+  border: 4px solid black;
+  border-radius: 5px;
+  font-size: 30px;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+.bi:hover {
+  background-color: black;
+  color: #9bba5a;
+}
+#buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#start:hover {
+  color: var(--mainColor);
+  background-color: var(--textColor);
+}
+#restart {
+  font-size: 35px;
+  cursor: pointer;
+  transition: 0.1s linear;
+  padding: 10px;
+  border-radius: 15px;
+}
+#restart:hover {
+  color: var(--mainColor);
+  background-color: var(--textColor);
+}
+img {
+  width: 50px;
+  height: 50px;
+}
+footer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: sans-serif;
+}
+#game-over {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 20%;
+  left: 41%;
+  display: none;
+}
+#game-over #start:hover {
+  background-color: black;
+}
+@media (max-width: 528px) {
+  #game-over {
+    right: 40px;
+    text-wrap: nowrap;
+  }
+}
+@media (max-width: 672px) {
+  #game-board {
+    width: 600px;
+    height: 400px;
+  }
+}
+@media (max-width: 505px) {
+  #game-board {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 336px) {
+  #game-board {
+    transform: scale(0.9);
+  }
+}

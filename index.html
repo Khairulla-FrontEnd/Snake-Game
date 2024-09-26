@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Matemasie&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="icon" href="img/snake-icon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Snake</title>
+  </head>
+  <body>
+    <canvas id="game-board" width="800" height="600"> </canvas>
+    <h2 id="record"></h2>
+    <div id="start-point">
+      <h1 id="title">
+        <img src="img/snake-icon.svg" alt="snake-icon" />
+        SNAKE
+        <img src="img/snake-icon.svg" alt="snake-icon" />
+      </h1>
+      <h2 id="start">START</h2>
+    </div>
+    <div id="buttons">
+      <i class="bi bi-arrow-left" id="arrow-left"></i>
+      <i class="bi bi-arrow-right" id="arrow-right"></i>
+      <i class="bi bi-arrow-up" id="arrow-up"></i>
+      <i class="bi bi-arrow-down" id="arrow-down"></i>
+    </div>
+    <div id="game-over">
+      <h1 id="title">Game Over</h1>
+      <h2 id="restart">RESTART</h2>
+    </div>
+    <footer>
+      <h4>Copyright © Snake by Khairulla 2024</h4>
+      <p>All rights reserved.</p>
+    </footer>
+  </body>
+  <script src="app.js"></script>
+</html>
